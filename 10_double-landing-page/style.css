@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifs;
+}
+
+h1 {
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 10px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 4px solid;
+    cursor: pointer;
+    transition: .5s background-color;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+
+    border: 4px solid black;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.split.left {
+    background-color: salmon;
+    background: url("https://i.guim.co.uk/img/media/18badfc0b64b09f917fd14bbe47d73fd92feeb27/189_335_5080_3048/master/5080.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1562112c7a64da36ae0a5e75075a0d12");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+}
+
+.split.right {
+    background-color: lightblue;
+    background: url("https://i5.walmartimages.com/seo/Pre-Owned-Samsung-Galaxy-S10-G973U-128GB-GSM-CDMA-Unlocked-Android-Phone-Prism-Blue-Refurbished-Good_98090adb-b77b-4355-afe7-77357d48e867.04a2928ade478807772f5115b76e07f7.jpeg");
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+
+.active-left .left {
+    width: 75%;
+}
+
+.active-left .right {
+    width: 25%;
+}
+
+.active-right .left {
+    width: 25%;
+}
+
+.active-right .right {
+    width: 75%;
+}
+
+.left,
+.right {
+    transition: width .2s ease-in-out;
+}

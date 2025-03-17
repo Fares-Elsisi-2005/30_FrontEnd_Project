@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.input {
+    visibility: hidden;
+}
+
+.label {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* the hight of label is 40px and cricle is 34px 
+so the remain is 6px so 3px at top and 3px at bottom 
+thats why we let the top of the circule to 3px to make it in the middle*/
+.circle {
+    width: 34px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    animation: toggleOff.4s linear forwards;
+
+}
+
+.input:checked+.label {
+    background-color: gray;
+}
+
+.input:checked+.label .circle {
+    animation: toggleOn .4s linear forwards;
+    background-color: black;
+
+
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

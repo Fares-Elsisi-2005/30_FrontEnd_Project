@@ -1,0 +1,28 @@
+body {
+    perspective: 900px;
+}
+
+.parent {
+    margin: 200px;
+    width: 600px;
+    height: 600px;
+    background-color: orangered;
+    transform: rotateX(60deg) rotateZ(40deg);
+    transform-style: preserve-3d;
+}
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background: slateblue;
+    transform: translateX(30px) rotateX(50deg);
+}
+
+.child2 {
+    width: 400px;
+    height: 400px;
+    background: salmon;
+    transform: translateX(50px) rotateY(100deg);
+
+
+}

@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+
+.top-container{
+    background-image: url("/24_StickyNavbar/img/hacker-digital-screens-cyberpunk-desktop-wallpaper-4k.jpg");
+    height: 100vh;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-container h1{
+    color :black;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+}
+
+.bottom-container .text{
+margin: 50px 6%;
+font-family: sans-serif;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+
+    transition:background-color 0.4s ;
+
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navbar ul li{
+}
+.navbar ul li a{
+    margin: 0 10px ;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+}
+ 
+.navbar ul li a:hover{
+color: red;
+}
+
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color: white;
+
+}
+.navbar.active ul li a:hover{
+    color: red;
+    }

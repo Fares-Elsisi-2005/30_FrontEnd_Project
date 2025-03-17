@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: slateblue;
+    color: whitesmoke;
+    font-family: cursive;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+h2{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 5em;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    backdrop-filter: brightness(.6);
+    width: 100%;
+
+
+}
+
+.time div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.timeNum{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.text{
+    text-transform: uppercase;
+
+}
