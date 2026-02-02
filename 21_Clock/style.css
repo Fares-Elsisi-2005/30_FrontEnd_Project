@@ -8,6 +8,9 @@ body{
     align-items: center;
 
     background-color: salmon;
+    background: url("./img/darkBlue.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
     font-family: 'Courier New', Courier, monospace;
 }
 

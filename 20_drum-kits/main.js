@@ -6,14 +6,14 @@ kits.forEach(kit => {
     // create buttons and append it in container
     const btnEl = document.createElement("button");
     btnEl.innerText = kit;
-    btnEl.style.backgroundImage = `url(/20_drum-kits/img/${kit}.png)`
+    btnEl.style.backgroundImage = `url(./img/${kit}.png)`
     btnEl.classList.add("btn");
     containerEl.appendChild(btnEl);
 
 
     // create audio and append it in container 
     const audioEL = document.createElement("audio");
-    audioEL.src = `/20_drum-kits/sounds/${kit}.mp3`
+    audioEL.src = `./sounds/${kit}.mp3`
     containerEl.appendChild(audioEL)
 
 

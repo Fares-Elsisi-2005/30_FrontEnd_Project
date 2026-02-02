@@ -2,6 +2,10 @@ body{
     margin: 0;
     font-family: sans-serif;
     text-align: center;
+    background: url("./img/pexels-alexeydemidov-10542148.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .dice{
